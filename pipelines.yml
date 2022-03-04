@@ -4,6 +4,8 @@ pipelines:
       - name: Release_approval
         type: Bash
         configuration:
+            runtime:
+                type: host
             requiresApproval:
                 timeoutSeconds: 43200 # if not approved in this timeframe, the step will be cancelled
                 approvers:
