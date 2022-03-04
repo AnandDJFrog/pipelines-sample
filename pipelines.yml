@@ -8,8 +8,8 @@ pipelines:
                 timeoutSeconds: 43200 # if not approved in this timeframe, the step will be cancelled
                 approvers:
                   - admin
-            notifications:
-              - integrationName: test_slack # required Slack integration
+                notifications:
+                  - integrationName: test_slack # required Slack integration
         execution:
             onExecute:
               - echo "executing step..."
